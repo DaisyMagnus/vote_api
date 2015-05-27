@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  get 'voter/index'
   get 'candidate/index'
+  get 'candidate/show'
+  post 'voter/create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
