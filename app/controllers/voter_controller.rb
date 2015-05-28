@@ -20,6 +20,9 @@ class VoterController < ApplicationController
   def update
     if voter = Voter.find_by(params[:token_key_string]).to_json
       voter.change
+    elsif voter = Voter.find_by(params[:id]).to_json
+      voter.change
+    else
     end
   end
 

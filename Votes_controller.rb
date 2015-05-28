@@ -1,6 +1,6 @@
 class VoteController < ApplicationController
   def create
-    vote = Vote.new(:token_key_string)
+    voter = Vote.new(:token_key_string)
     if voter.save
       render json: voter
     else
@@ -8,5 +8,7 @@ class VoteController < ApplicationController
     end
   end
 
-  
+  def destroy
+    
+  end
 end

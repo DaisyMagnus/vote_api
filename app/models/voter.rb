@@ -4,7 +4,7 @@ class Voter < ActiveRecord::Base
   validates :zipcode, length: { is: 5 }
   validates :token_key_string, presence: true, length: { minimum: 10 }
 
-  def change
+  def change(params)
     voter = Voter.new(name: params[:name], party: params[:party],
             zipcode: params[:zipcode])
     @voter = Voter.find(params[:id])

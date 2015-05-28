@@ -19,4 +19,7 @@ class VoterTest < ActiveSupport::TestCase
       assert janice.id
       assert gina.id
     end
+
+  
+
 end
