@@ -4,4 +4,6 @@ This is a Rails-based application that creates and serves up an API.  The API wi
 
 I created tables containing information on candidates, voters, and votes.  
 
-The table is put out in the form os a JSON file.  
+The tables are displayed as a json file.
+
+The actions available on the candidates files are index and show.  The actions available
